@@ -1,0 +1,63 @@
+.pageLogin {
+  background-color: rgb(36, 53, 63);
+  position: relative;
+}
+.signup {
+  background-color: rgb(36, 53, 63);
+}
+.welcomePage {
+  background-color: rgb(36, 53, 63);
+}
+.innerbox {
+  background-color: rgb(36, 53, 63);
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 50px;
+}
+h1 {
+  color: rgb(23, 162, 184);
+}
+p {
+  color: white;
+  span {
+    cursor: pointer;
+  }
+}
+input {
+  margin-bottom: 15px;
+}
+#emailId {
+  margin-top: 15px;
+}
+button {
+  width: 100%;
+}
+nav {
+  background-color: rgb(36, 53, 63);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logout {
+  width: fit-content;
+}
+.smart {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.content {
+  background-color: rgb(36, 53, 63);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  height: 200px;
+  width: 50%;
+  left: 20%;
+  top: 30%;
+}

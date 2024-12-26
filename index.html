@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="pageLogin vh-100">
+      <div class="innerbox w-50 h-50">
+        <h1>Smart Login System</h1>
+        <form action="">
+          <div class="inputs">
+            <input
+              class="form-control"
+              id="emailLoginId"
+              type="email"
+              placeholder="Enter Your Email"
+              name="email"
+            />
+            <input
+              class="form-control"
+              type="password"
+              id="passwordLoginId"
+              placeholder="Enter Your Password"
+              name="password"
+            />
+          </div>
+          <div class="errMessageLOgin"></div>
+          <button id="btnLOgin" class="btn btn-outline-info mb-2">Login</button>
+          <p>
+            Don’t have an account?
+            <span id="signupLink">Sign Up</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="signup vh-100 d-none">
+      <div class="innerbox w-50">
+        <h1>Smart Login System</h1>
+        <form action="">
+          <div class="inputs">
+            <input
+              class="form-control"
+              id="nameSignUpId"
+              type="text"
+              placeholder="Enter Your Name"
+              name="userName"
+            />
+            <p class="Uname text-danger text-center"></p>
+            <input
+              class="form-control"
+              type="email"
+              id="emailSignupId"
+              placeholder="Enter Your Email"
+              name="email"
+            />
+            <p class="Uemail text-danger text-center"></p>
+            <input
+              class="form-control"
+              type="password"
+              id="passwordSignupId"
+              placeholder="Enter Your Password"
+              name="password"
+            />
+            <ul id="passwordRules" class="text-danger d-none ps-3 m-0">
+              <li>password must be at least 8 characters</li>
+              <li>contains at least one letter (a-z or A-Z)</li>
+              <li>include at least one special character (e.g., !@#$%^&*).</li>
+            </ul>
+          </div>
+
+          <div class="errormessage"></div>
+          <button id="btnSignup" class="btn btn-outline-info mb-2">
+            Sign Up
+          </button>
+          <p>
+            You have an account?
+            <span id="SigninLink"> Sign in</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="welcomePage vh-100 position-relative d-none">
+      <nav>
+        <p class="smart">SMART LOGIN</p>
+        <button class="logout btn btn-outline-warning">Logout</button>
+      </nav>
+
+      <div
+        class="content position-absolute text-info text-center h1 pt-5"
+      ></div>
+    </div>
+    <script src="JS/index.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
